@@ -28,10 +28,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar el código de la aplicación FastAPI
 COPY fastapi/app /app
 
-# Copiar el módulo rips_generator desde el proyecto principal
-COPY ../src/rips_generator /app/rips_generator
-
-# Copiar scripts necesarios
+# Copiar scripts y data necesarios
 COPY scripts /app/scripts
 COPY data /app/data
 
