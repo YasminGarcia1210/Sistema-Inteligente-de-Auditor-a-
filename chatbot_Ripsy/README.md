@@ -1,4 +1,4 @@
-# 💙 Ripsy - Chatbot Inteligente de Auditoría en Salud
+# 💙 Ripsy - Sistema Inteligente de Auditoría en Salud
 
 <div align="center">
 
@@ -17,29 +17,55 @@
 
 ---
 
+## 📖 Tabla de Contenidos
+
+- [🎯 Descripción del Proyecto](#-descripción-del-proyecto)
+- [✨ Características Principales](#-características-principales)
+- [🚀 Tecnologías Utilizadas](#-tecnologías-utilizadas)
+- [📋 Requisitos del Sistema](#-requisitos-del-sistema)
+- [🛠️ Instalación y Configuración](#️-instalación-y-configuración)
+- [🚢 Despliegue con Docker](#-despliegue-con-docker)
+- [🎮 Uso del Sistema](#-uso-del-sistema)
+- [🧠 Análisis de Probabilidad de Glosa](#-análisis-de-probabilidad-de-glosa)
+- [🏗️ Arquitectura del Sistema](#️-arquitectura-del-sistema)
+- [🔧 Configuración Avanzada](#-configuración-avanzada)
+- [🚨 Solución de Problemas](#-solución-de-problemas)
+- [📈 Entrenamiento del Modelo](#-entrenamiento-del-modelo)
+
+---
+
 ## 🎯 Descripción del Proyecto
 
 **Ripsy** es un chatbot inteligente especializado en auditoría de facturas del sector salud en Colombia. Utiliza inteligencia artificial avanzada para ayudar a profesionales de la salud a entender, validar y procesar información relacionada con RIPS (Registro Individual de Prestación de Servicios de Salud), radicación de facturas, auditoría y **análisis de probabilidad de glosa**.
 
-### ✨ Características Principales
+### ¿Qué es una Glosa?
 
-- 🤖 **Chatbot Inteligente**: Respuestas precisas sobre facturación en salud
-- 📊 **Análisis de Probabilidad de Glosa**: Predicción inteligente basada en datos reales
-- 🔍 **Validación RIPS**: Verificación automática de registros de salud
-- 📁 **Gestión de Documentos**: Almacenamiento y procesamiento de archivos PDF
-- 🧠 **Modelo de IA Entrenado**: Análisis específico con datos de validaciones reales
-- 🎨 **Interfaz Web Moderna**: Frontend con Streamlit para fácil uso
-- 🔐 **Seguro y Confiable**: Cumple con estándares de seguridad en salud
+Una **glosa** es el rechazo total o parcial de una factura por parte de las EPS (Entidades Promotoras de Salud) debido a inconsistencias, errores o falta de justificación médica. Ripsy ayuda a **predecir y prevenir** estas glosas antes de radicar las facturas.
+
+---
+
+## ✨ Características Principales
+
+| Característica | Descripción |
+|:---|:---|
+| 🤖 **Chatbot Inteligente** | Respuestas precisas sobre facturación en salud usando OpenAI GPT-4o-mini |
+| 📊 **Análisis de Probabilidad de Glosa** | Predicción inteligente basada en 91 validaciones reales (35.2% tasa base de glosa) |
+| 🔍 **Validación RIPS** | Verificación automática de registros de salud según normativa colombiana |
+| 📁 **Gestión de Documentos** | Almacenamiento seguro en MinIO compatible con S3 |
+| 🧠 **Modelo de IA Entrenado** | Análisis específico con datos de validaciones reales (RVC033, RVC019, RVC051, RVG19) |
+| 🎨 **Interfaz Web Moderna** | Frontend con Streamlit para fácil uso y visualización |
+| 🔐 **Seguro y Confiable** | Cumple con estándares de seguridad en salud |
+| 🐳 **Totalmente Dockerizado** | Despliegue en un solo comando con Docker Compose |
 
 ---
 
 ## 🚀 Tecnologías Utilizadas
 
 ### Backend
-- **FastAPI** - Framework web moderno y rápido
-- **Python 3.10+** - Lenguaje de programación principal
-- **PostgreSQL** - Base de datos relacional con soporte vectorial
-- **MinIO** - Almacenamiento de objetos compatible con S3
+- **FastAPI** - Framework web moderno y rápido para APIs REST
+- **Python 3.10** - Lenguaje de programación principal
+- **PostgreSQL 15 + pgvector** - Base de datos relacional con soporte para embeddings vectoriales
+- **MinIO** - Almacenamiento de objetos compatible con S3 para documentos
 
 ### Frontend
 - **Streamlit** - Interfaz web interactiva y moderna
@@ -47,13 +73,13 @@
 - **JavaScript** - Interactividad avanzada
 
 ### Inteligencia Artificial
-- **OpenAI GPT-4o-mini** - Modelo de lenguaje avanzado
-- **Ollama + Llama3** - Modelo local alternativo
+- **OpenAI GPT-4o-mini** - Modelo de lenguaje avanzado para chat y análisis
+- **Ollama + Llama3** - Modelo local alternativo (opcional)
 - **Scikit-learn** - Machine Learning para análisis de glosa
-- **Procesamiento de Lenguaje Natural** - Análisis inteligente de texto
+- **Embeddings vectoriales** - Para búsqueda semántica en normativas
 
 ### Infraestructura
-- **Docker & Docker Compose** - Containerización
+- **Docker & Docker Compose** - Containerización completa
 - **Git** - Control de versiones
 
 ---
@@ -61,32 +87,50 @@
 ## 📋 Requisitos del Sistema
 
 ### Requisitos Mínimos
-- **Docker** 20.10+
-- **Docker Compose** 2.0+
-- **Git** 2.30+
-- **8GB RAM** mínimo
-- **20GB** espacio en disco
+- ✅ **Docker Desktop** 20.10+ (con Docker Compose v2)
+- ✅ **Git** 2.30+
+- ✅ **8GB RAM** mínimo
+- ✅ **20GB** espacio en disco libre
+- ✅ **Windows 10/11**, macOS 10.15+, o Linux (Ubuntu 20.04+)
 
 ### Requisitos Recomendados
-- **16GB RAM** para mejor rendimiento
-- **50GB** espacio en disco
-- **CPU** con 4+ núcleos
+- 🚀 **16GB RAM** para mejor rendimiento
+- 🚀 **50GB** espacio en disco
+- 🚀 **CPU** con 4+ núcleos
+- 🚀 **Conexión a Internet** estable (para OpenAI API)
+
+### Verificar Requisitos
+
+```powershell
+# Verificar Docker
+docker --version
+docker compose version
+
+# Verificar Git
+git --version
+
+# Verificar espacio en disco (Windows)
+Get-PSDrive C | Select-Object Used,Free
+```
 
 ---
 
 ## 🛠️ Instalación y Configuración
 
-### 1. Clonar el Repositorio
+### Paso 1: Clonar el Repositorio
+
 ```bash
 git clone https://github.com/YasminGarcia1210/RED_SALUD_25-2.git
-cd RED_SALUD_25-2
+cd RED_SALUD_25-2/chatbot_Ripsy
 ```
 
-### 2. Configurar Variables de Entorno
-Crear archivo `.env` con la siguiente configuración:
+### Paso 2: Configurar Variables de Entorno
+
+El archivo `.env` ya existe en el proyecto. **Asegúrate de tener tu API Key de OpenAI configurada:**
+
 ```env
 # === CONFIGURACIÓN OPENAI ===
-OPENAI_API_KEY=tu_api_key_aqui
+OPENAI_API_KEY=tu_api_key_aqui  # ⚠️ IMPORTANTE: Reemplaza con tu API key real
 OPENAI_MODEL=gpt-4o-mini
 OPENAI_MAX_TOKENS=2000
 OPENAI_TEMPERATURE=0.7
@@ -109,112 +153,234 @@ MINIO_SECRET_KEY=ripsy2024
 FASTAPI_PORT=8000
 ```
 
-### 3. Levantar los Servicios
-```bash
-# Iniciar todos los servicios
-docker-compose up -d
+> **💡 Consejo:** Puedes obtener una API Key de OpenAI en https://platform.openai.com/api-keys
 
-# Verificar el estado
-docker-compose ps
+---
+
+## 🚢 Despliegue con Docker
+
+### 🎯 Método 1: Despliegue Automático (Recomendado)
+
+El proyecto incluye un script automatizado que hace todo por ti:
+
+```powershell
+# Windows
+.\docker-start.bat
 ```
 
-### 4. Iniciar el Frontend
 ```bash
-# Opción 1: Usar script de Windows
-start_streamlit.bat
-
-# Opción 2: Comando directo
-streamlit run streamlit_app.py --server.port 8501
+# Linux/macOS
+chmod +x docker-start.sh
+./docker-start.sh
 ```
 
-### 5. Verificar la Instalación
-```bash
-# Probar la API
-curl http://localhost:8200/
+**¿Qué hace este script?**
+1. ✅ Verifica que Docker Desktop esté corriendo
+2. ✅ Detiene contenedores antiguos si existen
+3. ✅ Construye las imágenes Docker (FastAPI + Streamlit)
+4. ✅ Levanta todos los servicios (PostgreSQL, MinIO, FastAPI, Streamlit)
+5. ✅ Espera a que los servicios estén listos
+6. ✅ Muestra el estado y las URLs de acceso
+7. ✅ Muestra los logs en tiempo real
 
-# Probar conexión con OpenAI
-curl http://localhost:8200/test-openai
+### 🎯 Método 2: Despliegue Manual Paso a Paso
 
-# Acceder al frontend
-# http://localhost:8501
+Si prefieres tener más control, sigue estos pasos:
+
+#### 1. Iniciar Docker Desktop
+
+**Windows:**
+- Busca "Docker Desktop" en el menú de inicio
+- Haz clic para abrirlo
+- Espera a que el ícono de Docker aparezca en la barra de tareas (puede tardar 30-60 segundos)
+
+**Verificar que Docker está corriendo:**
+```powershell
+docker info
 ```
+
+Si ves información del sistema Docker, ¡estás listo! Si ves un error, Docker Desktop no está corriendo.
+
+#### 2. Construir las Imágenes Docker
+
+```bash
+# Construir todas las imágenes (puede tardar 5-10 minutos la primera vez)
+docker compose build
+
+# Ver el progreso
+docker compose build --progress=plain
+```
+
+**¿Qué se está construyendo?**
+- 🐳 **Imagen FastAPI**: Python 3.10 + FastAPI + dependencias + tesseract OCR
+- 🐳 **Imagen Streamlit**: Python 3.10 + Streamlit + dependencias
+- 🐳 **PostgreSQL**: Imagen oficial con extensión pgvector
+- 🐳 **MinIO**: Imagen oficial de almacenamiento S3
+
+#### 3. Levantar los Servicios
+
+```bash
+# Iniciar todos los servicios en segundo plano
+docker compose up -d
+
+# Ver los logs en tiempo real
+docker compose logs -f
+
+# Ver logs de un servicio específico
+docker compose logs -f fastapi
+docker compose logs -f streamlit
+```
+
+#### 4. Verificar el Estado
+
+```bash
+# Ver el estado de todos los servicios
+docker compose ps
+
+# Deberías ver algo como:
+# NAME              STATUS          PORTS
+# rips_postgres     Up (healthy)    0.0.0.0:5432->5432/tcp
+# rips_minio        Up (healthy)    0.0.0.0:9000-9001->9000-9001/tcp
+# rips_fastapi      Up (healthy)    0.0.0.0:8200->8000/tcp
+# rips_streamlit    Up (healthy)    0.0.0.0:8501->8501/tcp
+```
+
+#### 5. Acceder a las Aplicaciones
+
+Una vez que todos los servicios estén **healthy** (puede tardar 30-60 segundos):
+
+| Servicio | URL | Descripción |
+|:---|:---|:---|
+| 🎨 **Frontend Streamlit** | http://localhost:8501 | Interfaz principal de usuario |
+| 🔌 **API FastAPI** | http://localhost:8200 | API REST (documentación en /docs) |
+| 📦 **MinIO Console** | http://localhost:9001 | Gestión de archivos (usuario: ripsy, contraseña: ripsy2024) |
+| 🗄️ **PostgreSQL** | localhost:5432 | Base de datos (usuario: ripsy, contraseña: ripsy2024) |
 
 ---
 
 ## 🎮 Uso del Sistema
 
 ### 🌐 Interfaz Web (Recomendado)
-Accede a **http://localhost:8501** para usar la interfaz web completa con:
-- 💬 Chat interactivo con Ripsy
-- 📄 Análisis de probabilidad de glosa
-- 📊 Métricas en tiempo real
-- 🎯 Características del sistema
 
-### 🔌 API Endpoints
+1. **Abre tu navegador** y ve a http://localhost:8501
 
-#### 🏠 **Página Principal**
-```http
-GET http://localhost:8200/
+2. **Explora las funcionalidades:**
+   - 💬 **Chat con Ripsy**: Haz preguntas sobre facturación en salud
+   - 📊 **Análisis de Glosa**: Sube factura e historia clínica para análisis
+   - 📄 **Generación de RIPS**: Genera archivos RIPS automáticamente
+   - 📚 **Consulta de Normativas**: Búsqueda semántica en resoluciones
+
+### 🔌 API REST
+
+La API está documentada automáticamente con Swagger. Accede a:
+- **Documentación interactiva**: http://localhost:8200/docs
+- **Documentación alternativa**: http://localhost:8200/redoc
+
+#### Ejemplos de Uso de la API
+
+**1. Chat con OpenAI:**
+```bash
+curl -X POST "http://localhost:8200/chat" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user": "doctor_juan",
+    "message": "¿Cómo funciona la auditoría de facturas?"
+  }'
 ```
 
-#### 💬 **Chat con OpenAI**
-```http
-POST http://localhost:8200/chat
-Content-Type: application/json
-
-{
-  "user": "nombre_usuario",
-  "message": "¿Cómo funciona la auditoría de facturas?"
-}
+**2. Analizar Probabilidad de Glosa:**
+```bash
+curl -X POST "http://localhost:8200/analizar-glosa" \
+  -F "factura=@factura.pdf" \
+  -F "historia_clinica=@historia.pdf"
 ```
 
-#### 🔍 **Análisis de Probabilidad de Glosa**
-```http
-POST http://localhost:8200/analizar-glosa
-Content-Type: multipart/form-data
-
-factura: [archivo_factura.pdf]
-historia_clinica: [archivo_historia.pdf]
+**3. Consultar Normativas (RAG):**
+```bash
+curl -X POST "http://localhost:8200/consultar-normas" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "message": "¿Qué dice la resolución 3047 sobre RIPS?"
+  }'
 ```
 
-#### 📁 **Subir Documentos**
-```http
-POST http://localhost:8200/documents/upload
-Content-Type: multipart/form-data
-
-file: [archivo.pdf]
-folder: "facturas"
-```
-
-#### 📋 **Listar Documentos**
-```http
-GET http://localhost:8200/documents/list?folder=facturas
+**4. Subir Documentos:**
+```bash
+curl -X POST "http://localhost:8200/documents/upload" \
+  -F "file=@factura.pdf" \
+  -F "folder=facturas"
 ```
 
 ---
 
 ## 🧠 Análisis de Probabilidad de Glosa
 
-### 🎯 Funcionalidad Principal
-Ripsy puede analizar facturas e historias clínicas en PDF para predecir la probabilidad de glosa basándose en:
+### 🎯 ¿Cómo Funciona?
 
-- **📊 Códigos de Validación Reales**: RVC033, RVG19, RVC019, etc.
-- **🔍 Coherencia entre Documentos**: Comparación factura vs historia clínica
-- **⚖️ Factores de Riesgo**: Códigos CUPS, CIE, fechas, justificación médica
-- **📈 Modelo Entrenado**: Basado en 18 casos reales con 91 validaciones
+Ripsy analiza facturas e historias clínicas usando un modelo de Machine Learning entrenado con **91 validaciones reales** de 18 casos documentados.
 
-### 📊 Métricas del Dataset
+### 📊 Factores Analizados
+
+El sistema evalúa múltiples dimensiones:
+
+1. **Coherencia Diagnóstica (0-100%)**
+   - ¿El diagnóstico CIE-10 es coherente con los procedimientos CUPS?
+   - ¿Hay diagnósticos contradictorios?
+
+2. **Justificación Médica (0-100%)**
+   - ¿La historia clínica justifica los procedimientos facturados?
+   - ¿Hay evidencia clínica suficiente?
+
+3. **Cumplimiento Normativo (0-100%)**
+   - ¿Se cumplen las validaciones RVC033, RVC019, RVC051, RVG19?
+   - ¿Los códigos son válidos según la normativa vigente?
+
+4. **Calidad Documental (0-100%)**
+   - ¿Los documentos están completos?
+   - ¿La información es legible y consistente?
+
+### 📈 Métricas del Dataset de Entrenamiento
+
 - **18 archivos** procesados exitosamente
 - **91 validaciones** analizadas
 - **35.2%** probabilidad base de glosa
 - **32 validaciones** de alto riesgo (35.2%)
 - **41 validaciones** de medio riesgo (45.1%)
 
-### 🔝 Códigos Más Problemáticos
-1. **RVC019**: 23 ocurrencias (CUPS validación)
-2. **RVC033**: 20 ocurrencias (CIE no válido)
-3. **RVC051**: 18 ocurrencias (Finalidad)
-4. **RVG19**: 12 ocurrencias (Validación PSS/PTS)
+### 🔝 Códigos de Validación Más Problemáticos
+
+| Código | Ocurrencias | Descripción |
+|:---|:---:|:---|
+| **RVC019** | 23 | Validación de códigos CUPS |
+| **RVC033** | 20 | Validación de códigos CIE-10 |
+| **RVC051** | 18 | Validación de finalidad del servicio |
+| **RVG19** | 12 | Validación PSS/PTS |
+
+### 💡 Ejemplo de Análisis
+
+```json
+{
+  "ok": true,
+  "probabilidad_glosa": 67,
+  "nivel_riesgo": "ALTO",
+  "factores_riesgo": [
+    "Código CIE-10 'Z00.0' no justifica procedimiento CUPS '890201'",
+    "Falta descripción detallada en historia clínica",
+    "Fecha de servicio no coincide con fecha de factura"
+  ],
+  "recomendaciones": [
+    "Revisar coherencia entre diagnóstico y procedimiento",
+    "Completar historia clínica con más detalles",
+    "Verificar fechas de servicio"
+  ],
+  "puntuacion_detallada": {
+    "coherencia_diagnostica": 45,
+    "justificacion_medica": 60,
+    "cumplimiento_normativo": 55,
+    "calidad_documental": 70
+  }
+}
+```
 
 ---
 
@@ -222,61 +388,78 @@ Ripsy puede analizar facturas e historias clínicas en PDF para predecir la prob
 
 ```mermaid
 graph TB
-    A[Usuario] --> B[Streamlit Frontend]
-    B --> C[FastAPI Backend]
-    C --> D[OpenAI GPT-4o-mini]
-    C --> E[Modelo de Glosa Entrenado]
-    C --> F[PostgreSQL]
-    C --> G[MinIO Storage]
+    subgraph "Cliente"
+        A[👤 Usuario]
+    end
     
-    D --> H[Respuesta Inteligente]
-    E --> I[Análisis de Glosa]
-    F --> J[Historial de Conversaciones]
-    G --> K[Documentos y Archivos]
+    subgraph "Frontend"
+        B[🎨 Streamlit<br/>Puerto 8501]
+    end
     
-    H --> B
-    I --> B
-    J --> B
-    K --> B
+    subgraph "Backend"
+        C[🔌 FastAPI<br/>Puerto 8200]
+    end
+    
+    subgraph "Servicios de Datos"
+        D[🗄️ PostgreSQL<br/>Puerto 5432]
+        E[📦 MinIO<br/>Puerto 9000/9001]
+    end
+    
+    subgraph "IA Externa"
+        F[🤖 OpenAI<br/>GPT-4o-mini]
+    end
+    
+    subgraph "Módulos Internos"
+        G[📊 Modelo de Glosa]
+        H[📄 RIPS Generator]
+        I[🔍 RAG Normativas]
+    end
+    
+    A -->|Interactúa| B
+    B -->|API Calls| C
+    C -->|Consultas SQL| D
+    C -->|Almacena/Lee PDFs| E
+    C -->|Embeddings & Chat| F
+    C -->|Predice Glosa| G
+    C -->|Genera RIPS| H
+    C -->|Búsqueda Semántica| I
+    I -->|Embeddings| D
+    
+    style A fill:#e1f5ff
+    style B fill:#ff4b4b
+    style C fill:#005571
+    style D fill:#316192
+    style E fill:#c72c48
+    style F fill:#412991
+    style G fill:#4caf50
+    style H fill:#ff9800
+    style I fill:#9c27b0
 ```
 
-### Componentes Principales
+### 🔄 Flujo de Datos
 
-1. **Streamlit Frontend** - Interfaz web moderna
-2. **FastAPI Backend** - API REST principal
-3. **Modelo de Glosa** - IA entrenada con datos reales
-4. **OpenAI Integration** - IA avanzada para respuestas
-5. **PostgreSQL Database** - Almacenamiento de conversaciones
-6. **MinIO Storage** - Gestión de documentos
-7. **Docker Containers** - Infraestructura containerizada
+1. **Usuario** → Interactúa con **Streamlit**
+2. **Streamlit** → Envía peticiones HTTP a **FastAPI**
+3. **FastAPI** → Procesa la petición y:
+   - Consulta **PostgreSQL** para historial/embeddings
+   - Lee/escribe archivos en **MinIO**
+   - Llama a **OpenAI** para chat/embeddings
+   - Usa **Modelo de Glosa** para predicciones
+   - Usa **RIPS Generator** para generar archivos
+4. **FastAPI** → Retorna respuesta a **Streamlit**
+5. **Streamlit** → Muestra resultado al **Usuario**
 
----
+### 📦 Componentes del Sistema
 
-## 📊 Monitoreo y Logs
-
-### Ver Logs en Tiempo Real
-```bash
-# Logs de FastAPI
-docker-compose logs -f fastapi
-
-# Logs de PostgreSQL
-docker-compose logs -f postgres
-
-# Logs de MinIO
-docker-compose logs -f minio
-```
-
-### Estado de los Servicios
-```bash
-# Verificar estado
-docker-compose ps
-
-# Reiniciar servicios
-docker-compose restart
-
-# Parar servicios
-docker-compose down
-```
+| Componente | Tecnología | Puerto | Función |
+|:---|:---|:---:|:---|
+| **Frontend** | Streamlit | 8501 | Interfaz de usuario web |
+| **Backend API** | FastAPI | 8200 | Lógica de negocio y endpoints |
+| **Base de Datos** | PostgreSQL 15 + pgvector | 5432 | Almacenamiento de datos y embeddings |
+| **Almacenamiento** | MinIO | 9000/9001 | Archivos PDF y documentos |
+| **IA Chat** | OpenAI GPT-4o-mini | - | Chatbot inteligente |
+| **IA Glosa** | Scikit-learn | - | Predicción de glosas |
+| **RAG** | OpenAI Embeddings + pgvector | - | Búsqueda semántica en normativas |
 
 ---
 
@@ -285,64 +468,172 @@ docker-compose down
 ### Variables de Entorno Disponibles
 
 | Variable | Descripción | Valor por Defecto |
-|----------|-------------|-------------------|
-| `OPENAI_API_KEY` | Clave API de OpenAI | Requerida |
-| `OPENAI_MODEL` | Modelo de OpenAI | `gpt-4o-mini` |
-| `OPENAI_MAX_TOKENS` | Máximo de tokens | `2000` |
-| `OPENAI_TEMPERATURE` | Temperatura del modelo | `0.7` |
+|:---|:---|:---|
+| `OPENAI_API_KEY` | Clave API de OpenAI | **Requerida** |
+| `OPENAI_MODEL` | Modelo de OpenAI a usar | `gpt-4o-mini` |
+| `OPENAI_MAX_TOKENS` | Máximo de tokens por respuesta | `2000` |
+| `OPENAI_TEMPERATURE` | Temperatura del modelo (0-1) | `0.7` |
+| `POSTGRES_HOST` | Host de PostgreSQL | `postgres` |
+| `POSTGRES_PORT` | Puerto de PostgreSQL | `5432` |
+| `POSTGRES_DB` | Nombre de la base de datos | `ripsy_chatbot` |
+| `POSTGRES_USER` | Usuario de PostgreSQL | `ripsy` |
 | `POSTGRES_PASSWORD` | Contraseña de PostgreSQL | `ripsy2024` |
+| `MINIO_ROOT_USER` | Usuario de MinIO | `ripsy` |
 | `MINIO_ROOT_PASSWORD` | Contraseña de MinIO | `ripsy2024` |
+| `MINIO_ENDPOINT` | Endpoint de MinIO | `http://minio:9000` |
 
 ### Puertos del Sistema
 
-| Servicio | Puerto | Descripción |
-|----------|--------|-------------|
-| Streamlit | 8501 | Frontend web |
-| FastAPI | 8200 | API principal |
-| PostgreSQL | 5432 | Base de datos |
-| MinIO API | 9000 | Almacenamiento |
-| MinIO Console | 9001 | Interfaz web |
+| Servicio | Puerto Host | Puerto Contenedor | Protocolo |
+|:---|:---:|:---:|:---|
+| Streamlit | 8501 | 8501 | HTTP |
+| FastAPI | 8200 | 8000 | HTTP |
+| PostgreSQL | 5432 | 5432 | TCP |
+| MinIO API | 9000 | 9000 | HTTP |
+| MinIO Console | 9001 | 9001 | HTTP |
+
+### Personalizar Configuración
+
+**Cambiar puerto de Streamlit:**
+```yaml
+# En docker-compose.yml
+streamlit:
+  ports:
+    - "8080:8501"  # Cambiar 8501 por el puerto deseado
+```
+
+**Cambiar modelo de OpenAI:**
+```env
+# En .env
+OPENAI_MODEL=gpt-4  # Usar GPT-4 en lugar de GPT-4o-mini
+OPENAI_MAX_TOKENS=4000  # Aumentar tokens
+```
 
 ---
 
 ## 🚨 Solución de Problemas
 
-### Problemas Comunes
+### ❌ Docker Desktop no está corriendo
 
-#### ❌ Error de Conexión a OpenAI
-```bash
-# Verificar API key
-curl http://localhost:8200/test-openai
+**Síntoma:**
+```
+error during connect: This error may indicate that the docker daemon is not running
 ```
 
-#### ❌ Error de Base de Datos
-```bash
-# Reiniciar PostgreSQL
-docker-compose restart postgres
+**Solución:**
+1. Abre Docker Desktop desde el menú de inicio
+2. Espera a que el ícono de Docker aparezca en la barra de tareas
+3. Ejecuta `docker info` para verificar
+
+### ❌ Error de conexión a OpenAI
+
+**Síntoma:**
+```
+Error: Invalid API key
 ```
 
-#### ❌ Error de Almacenamiento
-```bash
-# Verificar MinIO
-docker-compose logs minio
+**Solución:**
+1. Verifica que tu API key esté correcta en el archivo `.env`
+2. Asegúrate de que la API key tenga créditos disponibles
+3. Prueba la conexión:
+   ```bash
+   curl http://localhost:8200/test-openai
+   ```
+
+### ❌ Puerto ya en uso
+
+**Síntoma:**
+```
+Error: bind: address already in use
 ```
 
-#### ❌ Error de Frontend
-```bash
-# Verificar que Streamlit esté corriendo
-streamlit run streamlit_app.py --server.port 8501
+**Solución:**
+1. Identifica qué proceso está usando el puerto:
+   ```powershell
+   # Windows
+   netstat -ano | findstr :8501
+   ```
+2. Detén el proceso o cambia el puerto en `docker-compose.yml`
+
+### ❌ Contenedor no inicia (unhealthy)
+
+**Síntoma:**
+```
+rips_fastapi    Up (unhealthy)
 ```
 
-### Comandos de Diagnóstico
+**Solución:**
+1. Ver los logs del contenedor:
+   ```bash
+   docker compose logs fastapi
+   ```
+2. Verificar que todas las dependencias estén instaladas
+3. Reiniciar el contenedor:
+   ```bash
+   docker compose restart fastapi
+   ```
+
+### ❌ Error al construir imágenes
+
+**Síntoma:**
+```
+ERROR: failed to solve: process "/bin/sh -c pip install..." did not complete successfully
+```
+
+**Solución:**
+1. Limpiar caché de Docker:
+   ```bash
+   docker system prune -a
+   ```
+2. Reconstruir sin caché:
+   ```bash
+   docker compose build --no-cache
+   ```
+
+### ❌ Base de datos no se conecta
+
+**Síntoma:**
+```
+psycopg2.OperationalError: could not connect to server
+```
+
+**Solución:**
+1. Verificar que PostgreSQL esté corriendo:
+   ```bash
+   docker compose ps postgres
+   ```
+2. Verificar las credenciales en `.env`
+3. Reiniciar PostgreSQL:
+   ```bash
+   docker compose restart postgres
+   ```
+
+### 🔍 Comandos Útiles de Diagnóstico
+
 ```bash
-# Verificar todos los servicios
-docker-compose ps
+# Ver todos los contenedores
+docker compose ps
 
-# Ver logs detallados
-docker-compose logs --tail=50
+# Ver logs de todos los servicios
+docker compose logs
 
-# Reiniciar todo el sistema
-docker-compose down -v && docker-compose up -d
+# Ver logs de un servicio específico
+docker compose logs -f fastapi
+
+# Entrar a un contenedor para debugging
+docker compose exec fastapi bash
+
+# Ver uso de recursos
+docker stats
+
+# Reiniciar todos los servicios
+docker compose restart
+
+# Detener y eliminar todo (incluyendo volúmenes)
+docker compose down -v
+
+# Reconstruir y reiniciar todo
+docker compose down && docker compose build && docker compose up -d
 ```
 
 ---
@@ -350,27 +641,103 @@ docker-compose down -v && docker-compose up -d
 ## 📈 Entrenamiento del Modelo de Glosa
 
 ### 🧠 Datos de Entrenamiento
-El modelo está entrenado con datos reales:
+
+El modelo está entrenado con datos reales de validaciones:
 - **18 casos** de facturas e historias clínicas
-- **91 validaciones** con códigos específicos
+- **91 validaciones** con códigos específicos (RVC033, RVC019, RVC051, RVG19)
 - **Análisis de riesgo** por código de validación
 
 ### 🔄 Reentrenar el Modelo
+
+Si tienes nuevos datos de validaciones, puedes reentrenar el modelo:
+
 ```bash
-# Analizar dataset
-python scripts/analizar_dataset.py
+# 1. Analizar dataset
+docker compose exec fastapi python scripts/analizar_dataset.py
 
-# Entrenar modelo completo
-python scripts/entrenar_completo.py
+# 2. Entrenar modelo completo
+docker compose exec fastapi python scripts/entrenar_completo.py
 
-# Generar reporte de métricas
-python scripts/reporte_simple.py
+# 3. Generar reporte de métricas
+docker compose exec fastapi python scripts/reporte_simple.py
 ```
 
 ### 📊 Archivos de Análisis
+
 - `analisis_dataset.json` - Análisis detallado del dataset
 - `metricas_dataset.png` - Gráficos de métricas
-- `modelo_glosa_entrenado.pkl` - Modelo entrenado
+- `modelo_glosa_entrenado.pkl` - Modelo entrenado (pickle)
+
+---
+
+## 📊 Monitoreo y Logs
+
+### Ver Logs en Tiempo Real
+
+```bash
+# Todos los servicios
+docker compose logs -f
+
+# Solo FastAPI
+docker compose logs -f fastapi
+
+# Solo Streamlit
+docker compose logs -f streamlit
+
+# Solo PostgreSQL
+docker compose logs -f postgres
+
+# Solo MinIO
+docker compose logs -f minio
+```
+
+### Estado de los Servicios
+
+```bash
+# Ver estado de todos los servicios
+docker compose ps
+
+# Ver uso de recursos
+docker stats
+```
+
+### Reiniciar Servicios
+
+```bash
+# Reiniciar un servicio específico
+docker compose restart fastapi
+
+# Reiniciar todos los servicios
+docker compose restart
+
+# Detener todos los servicios
+docker compose down
+
+# Iniciar todos los servicios
+docker compose up -d
+```
+
+---
+
+## 🛑 Detener el Sistema
+
+### Detener servicios (mantener datos)
+
+```bash
+docker compose down
+```
+
+### Detener servicios y eliminar volúmenes (eliminar datos)
+
+```bash
+docker compose down -v
+```
+
+### Limpiar todo (imágenes, contenedores, volúmenes)
+
+```bash
+docker compose down -v --rmi all
+```
 
 ---
 
@@ -389,6 +756,7 @@ python scripts/reporte_simple.py
 - **Python**: PEP 8
 - **Commits**: Mensajes descriptivos en español
 - **Documentación**: Comentarios claros en el código
+- **Tests**: Incluir tests para nuevas funcionalidades
 
 ---
 
@@ -413,19 +781,21 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ## 📞 Soporte y Contacto
 
 - **GitHub Issues**: [Reportar problemas](https://github.com/YasminGarcia1210/RED_SALUD_25-2/issues)
-- **Email**: [contacto@redsalud.com](mailto:contacto@redsalud.com)
+- **Email**: contacto@redsalud.com
 - **Documentación**: [Wiki del proyecto](https://github.com/YasminGarcia1210/RED_SALUD_25-2/wiki)
 
 ---
 
 ## 🎯 Próximas Funcionalidades
 
-- [ ] **Integración con más modelos de IA**
-- [ ] **Análisis de imágenes médicas**
+- [ ] **Integración con más modelos de IA** (Claude, Gemini)
+- [ ] **Análisis de imágenes médicas** (rayos X, resonancias)
 - [ ] **Exportación de reportes en PDF**
-- [ ] **Dashboard de métricas avanzadas**
-- [ ] **API para integración con otros sistemas**
-- [ ] **Análisis de tendencias de glosa**
+- [ ] **Dashboard de métricas avanzadas** (Grafana)
+- [ ] **API para integración con otros sistemas** (HIS, ERP)
+- [ ] **Análisis de tendencias de glosa** (histórico)
+- [ ] **Notificaciones automáticas** (email, Slack)
+- [ ] **Soporte multi-idioma** (inglés, portugués)
 
 ---
 
@@ -434,5 +804,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 **¡Gracias por usar Ripsy! 💙**
 
 *Transformando la auditoría de facturas en salud con inteligencia artificial*
+
+---
+
+**Versión:** 2.0.0 | **Última actualización:** Noviembre 2025
 
 </div>
