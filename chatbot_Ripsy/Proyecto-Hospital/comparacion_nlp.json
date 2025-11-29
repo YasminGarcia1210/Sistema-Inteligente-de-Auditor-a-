@@ -1,0 +1,26 @@
+{
+  "parser": {
+    "principal_diagnosis_code": "L039",
+    "principal_diagnosis_text": "CELULITIS DE SITIO NO ESPECIFICADO",
+    "service_purpose": "No Aplica",
+    "consultations": [
+      "890701",
+      "890301"
+    ]
+  },
+  "nlp": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "890701",
+        "text": "<td valign=\"top\" width=\"20%\">\n\t\t\t\t\t\t\tTipo:\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(890701) CONSULTA DE URGENCIAS POR MEDICINA GENERAL\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr><tr><td>&nbsp",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "metadata": {
+    "history_html": "05_Entradas_Evidencia/auditoria/Historias_Clinicas/ASVEN12045033/ASVEN12045033.html",
+    "transformer_enabled": false
+  }
+}

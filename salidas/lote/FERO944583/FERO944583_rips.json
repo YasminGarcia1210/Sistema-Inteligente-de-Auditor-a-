@@ -1,0 +1,96 @@
+{
+  "generated_at": "2025-10-28T23:03:57.665657",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-28T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1151947785",
+    "full_name": "ANTONIO JOSE JIMENEZ VASQUEZ",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1151947785",
+      "annex_original": "1151947785",
+      "resolved": "1151947785"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-20T12:34:06",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 20/06/2025 12:34:06\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 20/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":34:06\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 20/06/2025 12:33:14 Profesional: Fabiola Escobar Diaz.(promotor.) Identificación: CC 60309",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "XR: Orden: 0 Item:\nDescripción:\nEn la feria de servicios realizada el dia 08/06/2025 ingresa a vacunación paciente quien refiere se encuentra en buenas condiciones",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "3280",
+        "text": "ción de los servicios de promoción y mantenimiento de la salud según resolución 3280 del 2018\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 450",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2018",
+        "text": "os servicios de promoción y mantenimiento de la salud según resolución 3280 del 2018\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNAC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "280 del 2018\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 20/06/2025 CENTRO DE SALUD DESEPAZ\nINFLUENZA",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 20/06/2025 CENTRO DE SALUD DESEPAZ\nINFLUENZA DOSIS UNICA\nOTRAS EDADES\nAtendido Por:\nFABIOL",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO944583"
+}

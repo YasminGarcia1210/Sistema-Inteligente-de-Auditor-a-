@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-10-28T23:00:46.903728",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-24T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1075260671",
+    "full_name": "JHON FREIDER DELGADO CASTILLO",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1075260671",
+      "annex_original": "1075260671",
+      "resolved": "1075260671"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-24T13:25:30",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 24/06/2025 13:25:30\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 24/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":25:30\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 24/06/2025 13:25:02 Profesional: Maria Ingrid Riascos Balanta.(auxiliar .) Identificación:",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "IOSEGURIDAD.\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 24/06/2025 CENTRO DE SALUD DESEPAZ\nINFLUENZA",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 24/06/2025 CENTRO DE SALUD DESEPAZ\nINFLUENZA DOSIS UNICA\nOTRAS EDADES\nAtendido Por:\nMARIA",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO941920"
+}

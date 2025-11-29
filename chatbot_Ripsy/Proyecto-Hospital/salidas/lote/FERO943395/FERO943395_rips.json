@@ -1,0 +1,102 @@
+{
+  "generated_at": "2025-10-28T23:02:31.317097",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-26T00:00:00",
+    "customer_name": null,
+    "total_amount": "18000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "RC",
+    "document_number": "1110303137",
+    "full_name": "JACOBO MUÑOZ ESPINOSA",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "RC",
+      "annex_original": "TI",
+      "resolved": "RC"
+    },
+    "source_document_number": {
+      "history": "1110303137",
+      "annex_original": "1110303137",
+      "resolved": "1110303137"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "993513",
+      "consultation_date": "2025-06-26T10:08:43",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-26T10:08:43",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "18000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (18000.00) difiere de suma registros (0) por 18000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 26/06/2025 10:08:43\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 26/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":08:43\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 26/06/2025 10:07:34 Profesional: Maria Ingrid Riascos Balanta.(auxiliar .) Identificación:",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "IOSEGURIDAD.\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVIRUS DE PAPILOMA HUMANODOSIS UNICA 26/06/2025 CENTRO DE SALUD DESEPAZ\nVPH NINO",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "Fecha Aplicación Institución NO 4505\nVIRUS DE PAPILOMA HUMANODOSIS UNICA 26/06/2025 CENTRO DE SALUD DESEPAZ\nVPH NINOS\nProcedimientos\nFecha y Hora: 26/06/2025 10:08",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "26/06/2025 CENTRO DE SALUD DESEPAZ\nVPH NINOS\nProcedimientos\nFecha y Hora: 26/06/2025 10:08:00 Profesional: Maria Ingrid Riascos Balanta.(auxiliar .) Identificación:",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "IOSEGURIDAD.\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 26/06/2025 CENTRO DE SALUD DESEPAZ\nINFLUENZA",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 26/06/2025 CENTRO DE SALUD DESEPAZ\nINFLUENZA DOSIS UNICA\nOTRAS EDADES\nAtendido Por:\nMARIA",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO943395"
+}

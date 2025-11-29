@@ -1,0 +1,51 @@
+[
+  {
+    "history": "05_Entradas_Evidencia/auditoria/Historias_Clinicas/ASVEN12045033/ASVEN12045033.html",
+    "parser_principal_diagnosis": "L039",
+    "parser_consultations": [
+      "890701",
+      "890301"
+    ],
+    "nlp_diagnoses": [],
+    "nlp_procedures": [
+      {
+        "code": "890701",
+        "text": "<td valign=\"top\" width=\"20%\">\n\t\t\t\t\t\t\tTipo:\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(890701) CONSULTA DE URGENCIAS POR MEDICINA GENERAL\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr><tr><td>&nbsp",
+        "score": null,
+        "label": "PROC_HEURISTIC"
+      }
+    ]
+  },
+  {
+    "history": "05_Entradas_Evidencia/auditoria/Historias_Clinicas/TI1111689275/TI1111689275.html",
+    "parser_principal_diagnosis": "B349",
+    "parser_consultations": [
+      "890701",
+      "890701",
+      "890701",
+      "890301"
+    ],
+    "nlp_diagnoses": [
+      {
+        "code": "G08",
+        "text": "G08",
+        "score": null,
+        "label": "DIAG_HEURISTIC"
+      }
+    ],
+    "nlp_procedures": [
+      {
+        "code": "890701",
+        "text": "<td valign=\"top\" width=\"20%\">\n\t\t\t\t\t\t\tTipo:\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(890701) CONSULTA DE URGENCIAS POR MEDICINA GENERAL\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr><tr><td>&nbsp",
+        "score": null,
+        "label": "PROC_HEURISTIC"
+      },
+      {
+        "code": "890701",
+        "text": "<td valign=\"top\" width=\"20%\">\n\t\t\t\t\t\t\tTipo:\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(890701) CONSULTA DE URGENCIAS POR MEDICINA GENERAL\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr><tr><td>&nbsp",
+        "score": null,
+        "label": "PROC_HEURISTIC"
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2025-10-28T23:00:57.114392",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-25T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "16678456",
+    "full_name": "RICHARD MILLAN HOLGUIN",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "16678456",
+      "annex_original": "16678456",
+      "resolved": "16678456"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-25T11:16:29",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 25/06/2025 11:16:29\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 25/06/2025 11:15:33 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 25/06/2025 11:16:29\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 25/06/2025 11:15:33 Profesional: Maria Ximena Franco Perez.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO942611"
+}

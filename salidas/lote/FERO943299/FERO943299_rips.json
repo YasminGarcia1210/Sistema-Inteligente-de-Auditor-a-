@@ -1,0 +1,174 @@
+{
+  "generated_at": "2025-10-28T23:01:58.718352",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-26T00:00:00",
+    "customer_name": null,
+    "total_amount": "45000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "RC",
+    "document_number": "1104852915",
+    "full_name": "LAYAN SAMUEL GUEVERA GARZON",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "RC",
+      "annex_original": "RC",
+      "resolved": "RC"
+    },
+    "source_document_number": {
+      "history": "1104852915",
+      "annex_original": "1104852915",
+      "resolved": "1104852915"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99310603N13",
+      "consultation_date": "2025-06-26T11:18:10",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "993502",
+      "consultation_date": "2025-06-26T11:18:10",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99350901",
+      "consultation_date": "2025-06-26T11:18:10",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99352201",
+      "consultation_date": "2025-06-26T11:18:10",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99351003",
+      "consultation_date": "2025-06-26T11:18:10",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "45000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (45000.00) difiere de suma registros (0) por 45000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 26/06/2025 11:18:10\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 26/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":18:10\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 26/06/2025 10:57:24 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "BIOSEGURIDAD\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA REFUERZO 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nNEUMOCOCO",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "una Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA REFUERZO 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nNEUMOCOCO 13 - 1\nREFUERZO\nProcedimientos\nFecha",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "OS HOLMES TRUJILLO\nNEUMOCOCO 13 - 1\nREFUERZO\nProcedimientos\nFecha y Hora: 26/06/2025 11:01:58 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "BIOSEGURIDAD\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS UNICA 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nHEPATI",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS UNICA 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nHEPATITIS A\nProcedimientos\nFecha y Hora: 26/06/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "HOSPITAL CARLOS HOLMES TRUJILLO\nHEPATITIS A\nProcedimientos\nFecha y Hora: 26/06/2025 11:02:50 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "er y aceptar\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA PRIMERA DOSIS 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nVARI",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "osis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA PRIMERA DOSIS 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nVARICELA 1 DOSIS\nProcedimientos\nFecha y Hora: 2",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "ITAL CARLOS HOLMES TRUJILLO\nVARICELA 1 DOSIS\nProcedimientos\nFecha y Hora: 26/06/2025 11:03:33 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "s generales.\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION SRP TRIPLE PRIMERA DOSIS 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "Fecha Aplicación Institución NO 4505\nVACUNACION SRP TRIPLE PRIMERA DOSIS 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nVIRAL MMR 1 DOSIS\nProcedimientos\nFecha y Hora:",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "TAL CARLOS HOLMES TRUJILLO\nVIRAL MMR 1 DOSIS\nProcedimientos\nFecha y Hora: 26/06/2025 11:14:58 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "PROXIMA CITA\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nIN",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 26/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nINFLUENZA 1 REFUERZO\nAtendido Por:\nLILIA YESINA",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO943299"
+}

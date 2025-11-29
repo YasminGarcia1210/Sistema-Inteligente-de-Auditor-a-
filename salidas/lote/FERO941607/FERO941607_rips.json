@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-10-28T23:00:38.590149",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-24T00:00:00",
+    "customer_name": null,
+    "total_amount": "18000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "TI",
+    "document_number": "1110044059",
+    "full_name": "SANTIAGO OSSA JURADO",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "TI",
+      "annex_original": "TI",
+      "resolved": "TI"
+    },
+    "source_document_number": {
+      "history": "1110044059",
+      "annex_original": "1110044059",
+      "resolved": "1110044059"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-25T15:22:51",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    },
+    {
+      "consultation_code": "993520",
+      "consultation_date": "2025-06-25T15:22:51",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "18000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (18000.00) difiere de suma registros (0) por 18000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 25/06/2025 15:22:51\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 25/06/2025 15:19:39 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 25/06/2025 15:22:51\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 25/06/2025 15:19:39 Profesional: Maria Janeth Galvis Barrera.(auxiliar .) Identificación:",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "IENTE CON PROTOCOLO DE BIOSEGURIDAD. JORNADA\nProcedimientos\nFecha y Hora: 25/06/2025 15:21:18 Profesional: Maria Janeth Galvis Barrera.(auxiliar .) Identificación:",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO941607"
+}

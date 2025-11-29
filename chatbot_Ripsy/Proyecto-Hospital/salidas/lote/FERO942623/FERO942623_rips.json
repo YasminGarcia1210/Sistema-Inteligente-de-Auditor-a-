@@ -1,0 +1,102 @@
+{
+  "generated_at": "2025-10-28T23:00:58.792927",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-25T00:00:00",
+    "customer_name": null,
+    "total_amount": "18000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1151941892",
+    "full_name": "KATHERINE ALEXANDRA DIAZ",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1151941892",
+      "annex_original": "1151941892",
+      "resolved": "1151941892"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "993504",
+      "consultation_date": "2025-06-25T12:05:39",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-25T12:05:39",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "18000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (18000.00) difiere de suma registros (0) por 18000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 25/06/2025 12:05:39\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 25/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":05:39\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 25/06/2025 12:01:07 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "es generales\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nFI",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nFIEBRE AMARILLA\nProcedimientos\nFecha y Hora: 25",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "PITAL CARLOS HOLMES TRUJILLO\nFIEBRE AMARILLA\nProcedimientos\nFecha y Hora: 25/06/2025 12:04:52 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "PROXIMA CITA\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nIN",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nINFLUENZA DOSIS UNICA\nOTRAS EDADES\nAtendido Por",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO942623"
+}

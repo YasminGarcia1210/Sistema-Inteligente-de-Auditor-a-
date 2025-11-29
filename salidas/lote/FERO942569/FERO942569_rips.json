@@ -1,0 +1,174 @@
+{
+  "generated_at": "2025-10-28T23:00:55.818093",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-25T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "RC",
+    "document_number": "1110307036",
+    "full_name": "ALVARO JOHAN SOLIS BURITICA",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "RC",
+      "annex_original": "RC",
+      "resolved": "RC"
+    },
+    "source_document_number": {
+      "history": "1110307036",
+      "annex_original": "1110307036",
+      "resolved": "1110307036"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99313004",
+      "consultation_date": "2025-06-25T11:07:23",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99350109",
+      "consultation_date": "2025-06-25T11:07:23",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99351003",
+      "consultation_date": "2025-06-25T11:07:23",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "99352202",
+      "consultation_date": "2025-06-25T11:07:23",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    },
+    {
+      "consultation_code": "993504",
+      "consultation_date": "2025-06-25T11:07:23",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 25/06/2025 11:07:23\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 25/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":07:23\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 25/06/2025 11:03:50 Profesional: Alexandra Caicedo Angulo.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "ORRO Y BATA)\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION PENTAVALENTEPRIMER REFUERZO 25/06/2025 PUESTO DE SALUD COMUNEROS I\n1",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "cha Aplicación Institución NO 4505\nVACUNACION PENTAVALENTEPRIMER REFUERZO 25/06/2025 PUESTO DE SALUD COMUNEROS I\n1 REFUERZO\nProcedimientos\nFecha y Hora: 25/06/2025",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "/2025 PUESTO DE SALUD COMUNEROS I\n1 REFUERZO\nProcedimientos\nFecha y Hora: 25/06/2025 11:04:34 Profesional: Alexandra Caicedo Angulo.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "ORRO Y BATA)\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA PRIMER REFUERZO 25/06/2025 PUESTO DE SALUD COMUNEROS I\nPOLIOM",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA PRIMER REFUERZO 25/06/2025 PUESTO DE SALUD COMUNEROS I\nPOLIOMIELITIS IVP 1 INYECTABLE POLIO\nREFUERZO\nProce",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "OLIOMIELITIS IVP 1 INYECTABLE POLIO\nREFUERZO\nProcedimientos\nFecha y Hora: 25/06/2025 11:05:07 Profesional: Alexandra Caicedo Angulo.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "ES DE RIESGO\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 PUESTO DE SALUD COMUNEROS I\nINFLUE",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 PUESTO DE SALUD COMUNEROS I\nINFLUENZA 1 REFUERZO\nProcedimientos\nFecha y Hora: 2",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "TO DE SALUD COMUNEROS I\nINFLUENZA 1 REFUERZO\nProcedimientos\nFecha y Hora: 25/06/2025 11:05:52 Profesional: Alexandra Caicedo Angulo.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "ORRO Y BATA)\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION SRP TRIPLE DOSIS REFUERZO 25/06/2025 PUESTO DE SALUD COMUNEROS I\nVIR",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "Fecha Aplicación Institución NO 4505\nVACUNACION SRP TRIPLE DOSIS REFUERZO 25/06/2025 PUESTO DE SALUD COMUNEROS I\nVIRAL MMR 1 REFUERZO\nProcedimientos\nFecha y Hora: 2",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "TO DE SALUD COMUNEROS I\nVIRAL MMR 1 REFUERZO\nProcedimientos\nFecha y Hora: 25/06/2025 11:06:43 Profesional: Alexandra Caicedo Angulo.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "ORRO Y BATA)\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 PUESTO DE SALUD COMUNEROS I\nFIEBRE",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 PUESTO DE SALUD COMUNEROS I\nFIEBRE AMARILLA\nAtendido Por:\nALEXANDRA CAICEDO ANG",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO942569"
+}

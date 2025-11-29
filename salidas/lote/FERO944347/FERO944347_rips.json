@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-10-28T23:03:48.493979",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-27T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1112041835",
+    "full_name": "LAURA SOFIA CASTELLANOS LOPEZ",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1112041835",
+      "annex_original": "1112041835",
+      "resolved": "1112041835"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99520203",
+      "consultation_date": "2025-06-27T13:25:27",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 27/06/2025 13:25:27\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 27/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":25:27\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 27/06/2025 13:21:44 Profesional: Lilia Yesina Quinones Caicedo.(auxiliar .) Identificación",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "a de punción\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION COVID 19 TERCERA DOSIS 27/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nIN",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION COVID 19 TERCERA DOSIS 27/06/2025 HOSPITAL CARLOS HOLMES TRUJILLO\nINTRAMURAL 1 REFUERZO\nAtendido Por:\nLILIA YESIN",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO944347"
+}

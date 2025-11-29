@@ -1,0 +1,104 @@
+{
+  "generated_at": "2025-10-18T17:26:10.513445",
+  "invoice": {
+    "invoice_id": "FERO943858",
+    "issue_date": "2025-06-27T06:51:00-05:00",
+    "customer_name": "EMSSANAR EPS SAS   ",
+    "total_amount": "19800.00",
+    "line_count": 1
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1143997653",
+    "full_name": "ANGIE NIKOL OCAMPO CASTILLO",
+    "principal_diagnosis_code": "PYP",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1143997653",
+      "annex_original": "1143997653",
+      "resolved": "1143997653"
+    }
+  },
+  "rips_procedures": [
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943858",
+      "document_type": "CC",
+      "document_number": "1143997653",
+      "service_date": "2025-04-07T10:43:49",
+      "cups_code": "939403",
+      "diagnosis_code": "PYP",
+      "service_purpose_code": null,
+      "attention_type_code": null,
+      "net_value": "24500.00"
+    }
+  ],
+  "rips_consultations": [
+    {
+      "consultation_code": "890701",
+      "consultation_date": "2025-04-07T10:43:49",
+      "consultation_value": "0.00",
+      "diagnosis_code": "PYP"
+    },
+    {
+      "consultation_code": "890301",
+      "consultation_date": "2025-05-26T08:49:46",
+      "consultation_value": "0.00",
+      "diagnosis_code": "PYP"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "FERO943858",
+    "total_value": "19800.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (19800.00) difiere de suma registros (24500.00) por -4700.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [
+      {
+        "code": "N95",
+        "text": "N95",
+        "label": "DIAG_HEURISTIC",
+        "score": null
+      }
+    ],
+    "procedures": [
+      {
+        "code": "890116",
+        "text": "=\"20%\" valign=\"top\">Tipo de Consulta:</TD>\n\t\t\t\t\t   <TD width=\"80%\" colspan=\"3\">(890116) ATENCION [VISITA/SEGUIMIENTO] POR OTRO PROFESIONAL DE LA SALUD </TD>",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "939403",
+        "text": "76;: 1\n\t\t\t\t\t\t</b>\n\t\t\t\t\t</td>\n\t\t\t\t</TR>\n\t\t\t\t<tr>\n\t\t\t\t\t<td valign=\"top\">Cod:&nbsp;939403</td>\t\t\t\t\t\n\t\t\t\t\t<td valign=\"top\">Nomb:&nbsp;TERAPIA RESPIRATORIA INTEGRAL. -- IN",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "890701",
+        "text": "<td valign=\"top\" width=\"20%\">\n\t\t\t\t\t\t\tTipo:\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(890701) CONSULTA DE URGENCIAS POR MEDICINA GENERAL\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr><tr><td>&nbsp",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "890301",
+        "text": "</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t  \t<td>Tipo de Consulta:</td>\n\t\t\t\t  \t<td colspan=\"3\">(890301) CONSULTA DE CONTROL POR MEDICINA GENERAL </td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t  \t<td>",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO943858"
+}

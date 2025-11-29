@@ -1,0 +1,102 @@
+{
+  "generated_at": "2025-10-28T23:01:15.174851",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-25T00:00:00",
+    "customer_name": null,
+    "total_amount": "36000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "RC",
+    "document_number": "1105935729",
+    "full_name": "MARIANGEL MUTIZ VELASQUEZ",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "RC",
+      "annex_original": "RC",
+      "resolved": "RC"
+    },
+    "source_document_number": {
+      "history": "1105935729",
+      "annex_original": "1105935729",
+      "resolved": "1105935729"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-25T14:26:56",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    },
+    {
+      "consultation_code": "99350902",
+      "consultation_date": "2025-06-25T14:26:56",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    },
+    {
+      "consultation_code": "99312205",
+      "consultation_date": "2025-06-25T14:26:56",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    },
+    {
+      "consultation_code": "99350110",
+      "consultation_date": "2025-06-25T14:26:56",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "36000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (36000.00) difiere de suma registros (0) por 36000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 25/06/2025 14:26:56\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 25/06/2025 14:23:34 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 25/06/2025 14:26:56\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 25/06/2025 14:23:34 Profesional: Paola Andrea Benitez Roman.(auxiliar .) Identificación: C",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ": DXR: Orden: 0 Item:\nDescripción:\nInfluenza\nProcedimientos\nFecha y Hora: 25/06/2025 14:23:45 Profesional: Paola Andrea Benitez Roman.(auxiliar .) Identificación: C",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "P: DXR: Orden: 0 Item:\nDescripción:\nVaricela\nProcedimientos\nFecha y Hora: 25/06/2025 14:24:06 Profesional: Paola Andrea Benitez Roman.(auxiliar .) Identificación: C",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "ZO DXP: DXR: Orden: 0 Item:\nDescripción:\nDPT\nProcedimientos\nFecha y Hora: 25/06/2025 14:24:25 Profesional: Paola Andrea Benitez Roman.(auxiliar .) Identificación: C",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO942809"
+}

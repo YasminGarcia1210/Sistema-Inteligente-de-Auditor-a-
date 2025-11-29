@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-10-28T23:00:48.488679",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-24T00:00:00",
+    "customer_name": null,
+    "total_amount": "18000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1110364555",
+    "full_name": "DANA LORENA BRAVO CERON",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1110364555",
+      "annex_original": "1110364555",
+      "resolved": "1110364555"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "993504",
+      "consultation_date": "2025-06-24T15:09:33",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    },
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-24T15:09:33",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "18000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (18000.00) difiere de suma registros (0) por 18000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 24/06/2025 15:09:33\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 24/06/2025 15:08:17 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 24/06/2025 15:09:33\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 24/06/2025 15:08:17 Profesional: Paola Andrea Benitez Roman.(auxiliar .) Identificación: C",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "NAL DXP: DXR: Orden: 0 Item:\nDescripción:\nFA\nProcedimientos\nFecha y Hora: 24/06/2025 15:08:26 Profesional: Paola Andrea Benitez Roman.(auxiliar .) Identificación: C",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO942026"
+}

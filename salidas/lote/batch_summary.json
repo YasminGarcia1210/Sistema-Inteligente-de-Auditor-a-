@@ -1,0 +1,569 @@
+[
+  {
+    "factura": "FERO941607",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941607/FDE_805027337_FERO941607.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO941607/FERO941607_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941607/HEV_805027337_FERO941607.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO941607/FERO941607_rips.json y archivos planos en salidas/lote/FERO941607 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO941607/FERO941607_rips.json",
+    "output_dir": "salidas/lote/FERO941607"
+  },
+  {
+    "factura": "FERO941696",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941696/FDE_805027337_FERO941696.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO941696/FERO941696_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941696/HEV_805027337_FERO941696.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO941696/FERO941696_rips.json y archivos planos en salidas/lote/FERO941696 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO941696/FERO941696_rips.json",
+    "output_dir": "salidas/lote/FERO941696"
+  },
+  {
+    "factura": "FERO941728",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941728/FDE_805027337_FERO941728.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO941728/FERO941728_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941728/HEV_805027337_FERO941728.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO941728/FERO941728_rips.json y archivos planos en salidas/lote/FERO941728 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO941728/FERO941728_rips.json",
+    "output_dir": "salidas/lote/FERO941728"
+  },
+  {
+    "factura": "FERO941761",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941761/FDE_805027337_FERO941761.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO941761/FERO941761_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941761/HEV_805027337_FERO941761.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO941761/FERO941761_rips.json y archivos planos en salidas/lote/FERO941761 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO941761/FERO941761_rips.json",
+    "output_dir": "salidas/lote/FERO941761"
+  },
+  {
+    "factura": "FERO941906",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941906/FDE_805027337_FERO941906.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO941906/FERO941906_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941906/HEV_805027337_FERO941906.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO941906/FERO941906_rips.json y archivos planos en salidas/lote/FERO941906 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO941906/FERO941906_rips.json",
+    "output_dir": "salidas/lote/FERO941906"
+  },
+  {
+    "factura": "FERO941920",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941920/FDE_805027337_FERO941920.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO941920/FERO941920_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO941920/HEV_805027337_FERO941920.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO941920/FERO941920_rips.json y archivos planos en salidas/lote/FERO941920 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO941920/FERO941920_rips.json",
+    "output_dir": "salidas/lote/FERO941920"
+  },
+  {
+    "factura": "FERO942026",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942026/FDE_805027337_FERO942026.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942026/FERO942026_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942026/HEV_805027337_FERO942026.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942026/FERO942026_rips.json y archivos planos en salidas/lote/FERO942026 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942026/FERO942026_rips.json",
+    "output_dir": "salidas/lote/FERO942026"
+  },
+  {
+    "factura": "FERO942340",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942340/FDE_805027337_FERO942340.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942340/FERO942340_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942340/HEV_805027337_FERO942340.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942340/FERO942340_rips.json y archivos planos en salidas/lote/FERO942340 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942340/FERO942340_rips.json",
+    "output_dir": "salidas/lote/FERO942340"
+  },
+  {
+    "factura": "FERO942345",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942345/FDE_805027337_FERO942345.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942345/FERO942345_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942345/HEV_805027337_FERO942345.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 5 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942345/FERO942345_rips.json y archivos planos en salidas/lote/FERO942345 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942345/FERO942345_rips.json",
+    "output_dir": "salidas/lote/FERO942345"
+  },
+  {
+    "factura": "FERO942347",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942347/FDE_805027337_FERO942347.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942347/FERO942347_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942347/HEV_805027337_FERO942347.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942347/FERO942347_rips.json y archivos planos en salidas/lote/FERO942347 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942347/FERO942347_rips.json",
+    "output_dir": "salidas/lote/FERO942347"
+  },
+  {
+    "factura": "FERO942569",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942569/FDE_805027337_FERO942569.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942569/FERO942569_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942569/HEV_805027337_FERO942569.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 5 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942569/FERO942569_rips.json y archivos planos en salidas/lote/FERO942569 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942569/FERO942569_rips.json",
+    "output_dir": "salidas/lote/FERO942569"
+  },
+  {
+    "factura": "FERO942611",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942611/FDE_805027337_FERO942611.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942611/FERO942611_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942611/HEV_805027337_FERO942611.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942611/FERO942611_rips.json y archivos planos en salidas/lote/FERO942611 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942611/FERO942611_rips.json",
+    "output_dir": "salidas/lote/FERO942611"
+  },
+  {
+    "factura": "FERO942623",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942623/FDE_805027337_FERO942623.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942623/FERO942623_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942623/HEV_805027337_FERO942623.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942623/FERO942623_rips.json y archivos planos en salidas/lote/FERO942623 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942623/FERO942623_rips.json",
+    "output_dir": "salidas/lote/FERO942623"
+  },
+  {
+    "factura": "FERO942666",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942666/FDE_805027337_FERO942666.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942666/FERO942666_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942666/HEV_805027337_FERO942666.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942666/FERO942666_rips.json y archivos planos en salidas/lote/FERO942666 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942666/FERO942666_rips.json",
+    "output_dir": "salidas/lote/FERO942666"
+  },
+  {
+    "factura": "FERO942809",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942809/FDE_805027337_FERO942809.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942809/FERO942809_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942809/HEV_805027337_FERO942809.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 4 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942809/FERO942809_rips.json y archivos planos en salidas/lote/FERO942809 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942809/FERO942809_rips.json",
+    "output_dir": "salidas/lote/FERO942809"
+  },
+  {
+    "factura": "FERO942989",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942989/FDE_805027337_FERO942989.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO942989/FERO942989_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO942989/HEV_805027337_FERO942989.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO942989/FERO942989_rips.json y archivos planos en salidas/lote/FERO942989 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO942989/FERO942989_rips.json",
+    "output_dir": "salidas/lote/FERO942989"
+  },
+  {
+    "factura": "FERO943299",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943299/FDE_805027337_FERO943299.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943299/FERO943299_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943299/HEV_805027337_FERO943299.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 5 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943299/FERO943299_rips.json y archivos planos en salidas/lote/FERO943299 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943299/FERO943299_rips.json",
+    "output_dir": "salidas/lote/FERO943299"
+  },
+  {
+    "factura": "FERO943315",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943315/FDE_805027337_FERO943315.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943315/FERO943315_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943315/HEV_805027337_FERO943315.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943315/FERO943315_rips.json y archivos planos en salidas/lote/FERO943315 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943315/FERO943315_rips.json",
+    "output_dir": "salidas/lote/FERO943315"
+  },
+  {
+    "factura": "FERO943395",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943395/FDE_805027337_FERO943395.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943395/FERO943395_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943395/HEV_805027337_FERO943395.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943395/FERO943395_rips.json y archivos planos en salidas/lote/FERO943395 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943395/FERO943395_rips.json",
+    "output_dir": "salidas/lote/FERO943395"
+  },
+  {
+    "factura": "FERO943428",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943428/FDE_805027337_FERO943428.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943428/FERO943428_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943428/HEV_805027337_FERO943428.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943428/FERO943428_rips.json y archivos planos en salidas/lote/FERO943428 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943428/FERO943428_rips.json",
+    "output_dir": "salidas/lote/FERO943428"
+  },
+  {
+    "factura": "FERO943434",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943434/FDE_805027337_FERO943434.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943434/FERO943434_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943434/HEV_805027337_FERO943434.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943434/FERO943434_rips.json y archivos planos en salidas/lote/FERO943434 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943434/FERO943434_rips.json",
+    "output_dir": "salidas/lote/FERO943434"
+  },
+  {
+    "factura": "FERO943484",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943484/FDE_805027337_FERO943484.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943484/FERO943484_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943484/HEV_805027337_FERO943484.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943484/FERO943484_rips.json y archivos planos en salidas/lote/FERO943484 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943484/FERO943484_rips.json",
+    "output_dir": "salidas/lote/FERO943484"
+  },
+  {
+    "factura": "FERO943858",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943858/FERO943858_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943860",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943860/FERO943860_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943943",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943943/FERO943943_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943947",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943947/FERO943947_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943951",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943951/FERO943951_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943953",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943953/FERO943953_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943963",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943963/FERO943963_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943969",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943969/FDE_805027337_FERO943969.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943969/FERO943969_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943969/HEV_805027337_FERO943969.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943969/FERO943969_rips.json y archivos planos en salidas/lote/FERO943969 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943969/FERO943969_rips.json",
+    "output_dir": "salidas/lote/FERO943969"
+  },
+  {
+    "factura": "FERO943981",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943981/FERO943981_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO943988",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943988/FDE_805027337_FERO943988.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943988/FERO943988_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO943988/HEV_805027337_FERO943988.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO943988/FERO943988_rips.json y archivos planos en salidas/lote/FERO943988 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO943988/FERO943988_rips.json",
+    "output_dir": "salidas/lote/FERO943988"
+  },
+  {
+    "factura": "FERO943998",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO943998/FERO943998_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO944025",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO944025/FERO944025_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO944231",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO944231/FDE_805027337_FERO944231.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO944231/FERO944231_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO944231/HEV_805027337_FERO944231.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 2 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO944231/FERO944231_rips.json y archivos planos en salidas/lote/FERO944231 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO944231/FERO944231_rips.json",
+    "output_dir": "salidas/lote/FERO944231"
+  },
+  {
+    "factura": "FERO944347",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO944347/FDE_805027337_FERO944347.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO944347/FERO944347_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO944347/HEV_805027337_FERO944347.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO944347/FERO944347_rips.json y archivos planos en salidas/lote/FERO944347 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO944347/FERO944347_rips.json",
+    "output_dir": "salidas/lote/FERO944347"
+  },
+  {
+    "factura": "FERO944583",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO944583/FDE_805027337_FERO944583.pdf",
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO944583/FERO944583_Rips.json",
+    "history_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO944583/HEV_805027337_FERO944583.pdf",
+    "status": "completed",
+    "pdf_folder": null,
+    "message": "[OK] Se generaron 0 registros AP, 1 registros AC, 0 registros AM y 0 registros AT en salidas/lote/FERO944583/FERO944583_rips.json y archivos planos en salidas/lote/FERO944583 | Validación -> 0 errores, 1 advertencias.",
+    "output_json": "salidas/lote/FERO944583/FERO944583_rips.json",
+    "output_dir": "salidas/lote/FERO944583"
+  },
+  {
+    "factura": "FERO945446",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO945446/FERO945446.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO945851",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO945851/FERO945851.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO945889",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO945889/FERO945889.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO945895",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO945895/FERO945895.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO945962",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO945962/FERO945962.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO946064",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO946064/FERO946064.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO946077",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO946077/FERO946077.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO946132",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO946132/FERO946132.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO946236",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO946236/FERO946236.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO946313",
+    "invoice_pdf": "05_Entradas_Evidencia/FEV_JSON/FERO946313/FERO946313.pdf",
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "annex_missing",
+    "pdf_folder": null,
+    "message": "No se encontró el anexo RIPS (JSON) necesario para identificar al usuario."
+  },
+  {
+    "factura": "FERO948038",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO948038/FERO948038_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948230",
+    "invoice_pdf": null,
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948231",
+    "invoice_pdf": null,
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948235",
+    "invoice_pdf": null,
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948384",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO948384/FERO948384_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948394",
+    "invoice_pdf": null,
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948411",
+    "invoice_pdf": null,
+    "annex_json": "05_Entradas_Evidencia/FEV_JSON/FERO948411/FERO948411_Rips.json",
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948700",
+    "invoice_pdf": null,
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO948887",
+    "invoice_pdf": null,
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  },
+  {
+    "factura": "FERO949027",
+    "invoice_pdf": null,
+    "annex_json": null,
+    "history_pdf": null,
+    "status": "invoice_pdf_missing",
+    "pdf_folder": null,
+    "message": "No se encontró la factura PDF asociada."
+  }
+]

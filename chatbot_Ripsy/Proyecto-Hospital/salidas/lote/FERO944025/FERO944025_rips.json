@@ -1,0 +1,107 @@
+{
+  "generated_at": "2025-10-18T17:26:11.161929",
+  "invoice": {
+    "invoice_id": "FERO944025",
+    "issue_date": "2025-06-27T08:52:00-05:00",
+    "customer_name": "EMSSANAR EPS SAS   ",
+    "total_amount": "123600.00",
+    "line_count": 5
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "31870811",
+    "full_name": "EDILMA MARIA CAMPO QUIÑONEZ",
+    "principal_diagnosis_code": "Z121",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "31870811",
+      "annex_original": "31870811",
+      "resolved": "31870811"
+    }
+  },
+  "rips_procedures": [
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO944025",
+      "document_type": "CC",
+      "document_number": "31870811",
+      "service_date": "2025-05-09T10:46:13",
+      "cups_code": "903868",
+      "diagnosis_code": "Z121",
+      "service_purpose_code": "14",
+      "attention_type_code": null,
+      "net_value": "17800.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO944025",
+      "document_type": "CC",
+      "document_number": "31870811",
+      "service_date": "2025-05-09T10:46:13",
+      "cups_code": "903895",
+      "diagnosis_code": "Z121",
+      "service_purpose_code": "14",
+      "attention_type_code": null,
+      "net_value": "15200.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO944025",
+      "document_type": "CC",
+      "document_number": "31870811",
+      "service_date": "2025-05-09T10:46:13",
+      "cups_code": "903818",
+      "diagnosis_code": "Z121",
+      "service_purpose_code": "14",
+      "attention_type_code": null,
+      "net_value": "32400.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO944025",
+      "document_type": "CC",
+      "document_number": "31870811",
+      "service_date": "2025-05-09T10:46:13",
+      "cups_code": "903816",
+      "diagnosis_code": "Z121",
+      "service_purpose_code": "14",
+      "attention_type_code": null,
+      "net_value": "31500.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO944025",
+      "document_type": "CC",
+      "document_number": "31870811",
+      "service_date": "2025-05-09T10:46:13",
+      "cups_code": "903815",
+      "diagnosis_code": "Z121",
+      "service_purpose_code": "14",
+      "attention_type_code": null,
+      "net_value": "26700.00"
+    }
+  ],
+  "rips_consultations": [],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "FERO944025",
+    "total_value": "123600.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "INFO",
+      "code": "VAL000",
+      "message": "Registros validados sin inconsistencias detectadas."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": []
+  },
+  "output_dir": "salidas/lote/FERO944025"
+}

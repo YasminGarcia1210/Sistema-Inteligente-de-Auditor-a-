@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-10-28T23:00:29.049262",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-24T00:00:00",
+    "customer_name": null,
+    "total_amount": "18000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "TI",
+    "document_number": "1110302067",
+    "full_name": "MARTIN GAVIRIA ROMAN",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "TI",
+      "annex_original": "TI",
+      "resolved": "TI"
+    },
+    "source_document_number": {
+      "history": "1110302067",
+      "annex_original": "1110302067",
+      "resolved": "1110302067"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "993504",
+      "consultation_date": "2025-06-24T11:20:38",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    },
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-24T11:20:38",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "18000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (18000.00) difiere de suma registros (0) por 18000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 24/06/2025 11:20:38\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 24/06/2025 11:19:02 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 24/06/2025 11:20:38\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 24/06/2025 11:19:02 Profesional: Maria Ximena Franco Perez.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "RRO Y BATA).\nSE ENTREGA CARNET INTERNACIONAL\nProcedimientos\nFecha y Hora: 24/06/2025 11:20:01 Profesional: Maria Ximena Franco Perez.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote_test/FERO941696"
+}

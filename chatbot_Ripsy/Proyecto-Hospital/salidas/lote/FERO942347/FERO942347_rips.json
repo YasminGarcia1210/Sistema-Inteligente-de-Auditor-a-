@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-10-28T23:00:53.903476",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-25T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "RC",
+    "document_number": "1110304768",
+    "full_name": "ARIANA SOLIS BURITICA",
+    "principal_diagnosis_code": "Z279",
+    "source_document_type": {
+      "history": "RC",
+      "annex_original": "RC",
+      "resolved": "RC"
+    },
+    "source_document_number": {
+      "history": "1110304768",
+      "annex_original": "1110304768",
+      "resolved": "1110304768"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-25T11:29:17",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z279"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 25/06/2025 11:29:17\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 25/",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": ":29:17\nPROMOCION Y MANTENIMIENTO DE LA SALUD\nProcedimientos\nFecha y Hora: 25/06/2025 11:28:49 Profesional: Alexandra Caicedo Angulo.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "4505",
+        "text": "ES DE RIESGO\nEsquema de Vacunación\nVacuna Dosis Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 PUESTO DE SALUD COMUNEROS I\nINFLUE",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "is Fecha Aplicación Institución NO 4505\nVACUNACION CONTRA DOSIS ADICIONAL 25/06/2025 PUESTO DE SALUD COMUNEROS I\nINFLUENZA DOSIS UNICA\nOTRAS EDADES\nAtendido Por:\nAL",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO942347"
+}

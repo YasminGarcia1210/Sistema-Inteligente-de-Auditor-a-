@@ -1,0 +1,66 @@
+{
+  "generated_at": "2025-10-28T23:02:41.042720",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-26T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "38990340",
+    "full_name": "CARMEN NUBY RUIZ DE CARDENAS",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "38990340",
+      "annex_original": "38990340",
+      "resolved": "38990340"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-17T14:35:22",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 17/06/2025 14:35:22\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 17/06/2025 14:34:39 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 17/06/2025 14:35:22\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 17/06/2025 14:34:39 Profesional: Alexandra Maria Alcalde .(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO943428"
+}

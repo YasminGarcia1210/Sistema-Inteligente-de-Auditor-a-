@@ -1,0 +1,66 @@
+{
+  "generated_at": "2025-10-28T23:00:30.429741",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-24T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "TI",
+    "document_number": "1005968952",
+    "full_name": "LAURA MARCELA LONDOÑO BARRIOS",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "TI",
+      "annex_original": "CC",
+      "resolved": "TI"
+    },
+    "source_document_number": {
+      "history": "1005968952",
+      "annex_original": "1005968952",
+      "resolved": "1005968952"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "993504",
+      "consultation_date": "2025-06-24T08:59:55",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 24/06/2025 08:59:55\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 24/06/2025 08:58:17 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 24/06/2025 08:59:55\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 24/06/2025 08:58:17 Profesional: Alexandra Maria Alcalde .(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote_test/FERO941728"
+}

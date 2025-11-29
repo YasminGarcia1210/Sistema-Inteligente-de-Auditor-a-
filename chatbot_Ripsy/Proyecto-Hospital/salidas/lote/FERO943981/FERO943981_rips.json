@@ -1,0 +1,151 @@
+{
+  "generated_at": "2025-10-18T17:26:10.916428",
+  "invoice": {
+    "invoice_id": "FERO943981",
+    "issue_date": "2025-06-27T08:16:00-05:00",
+    "customer_name": "EMSSANAR EPS SAS   ",
+    "total_amount": "55100.00",
+    "line_count": 1
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1127538762",
+    "full_name": "BRILLID JOHANNI SOLIS BALLESTEROS",
+    "principal_diagnosis_code": "Z321",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1127538762",
+      "annex_original": "1127538762",
+      "resolved": "1127538762"
+    }
+  },
+  "rips_procedures": [
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943981",
+      "document_type": "CC",
+      "document_number": "1127538762",
+      "service_date": "2025-05-02T08:10:38",
+      "cups_code": "890250",
+      "diagnosis_code": "Z321",
+      "service_purpose_code": "14",
+      "attention_type_code": null,
+      "net_value": "55100.00"
+    }
+  ],
+  "rips_consultations": [
+    {
+      "consultation_code": "890209",
+      "consultation_date": "2025-05-02T08:10:38",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z321"
+    },
+    {
+      "consultation_code": "890209",
+      "consultation_date": "2025-05-07T11:02:52",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z321"
+    },
+    {
+      "consultation_code": "890309",
+      "consultation_date": "2025-05-02T08:10:38",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z321"
+    },
+    {
+      "consultation_code": "890701",
+      "consultation_date": "2025-05-02T08:10:38",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z321"
+    },
+    {
+      "consultation_code": "890262",
+      "consultation_date": "2025-05-02T08:10:38",
+      "consultation_value": "0.00",
+      "diagnosis_code": "Z321"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "FERO943981",
+    "total_value": "55100.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "INFO",
+      "code": "VAL000",
+      "message": "Registros validados sin inconsistencias detectadas."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "04/2025 laboratorio externo - Pruebas rpida VIH/ SIFILIS: NEGATIVAS de hoy 6/05/2025  niega antecedentes de ITS\n- Embarazo deseado y aceptado  niega consulta precon",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "04/2025 laboratorio externo - Pruebas rpida VIH/ SIFILIS: NEGATIVAS de hoy 6/05/2025  niega antecedentes de ITS\n- Embarazo deseado y aceptado  niega consulta precon",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "8</td></tr><tr>\n                <td width=\"30%\">Fecha de Consulta</td><td>06/05/2025</td></tr>\n            <tr><td>Semanas de Amenorrea</td><td>6.5</td><td></td><td",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "04/2025 laboratorio externo - Pruebas rpida VIH/ SIFILIS: NEGATIVAS de hoy 6/05/2025  niega antecedentes de ITS\n- Embarazo deseado y aceptado  niega consulta precon",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "890209",
+        "text": "</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t  \t<td>Tipo de Consulta:</td>\n\t\t\t\t  \t<td colspan=\"3\">(890209) CONSULTA DE PRIMERA VEZ POR TRABAJO SOCIAL </td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t  \t<t",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "890701",
+        "text": "<td valign=\"top\" width=\"20%\">\n\t\t\t\t\t\t\tTipo:\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(890701) CONSULTA DE URGENCIAS POR MEDICINA GENERAL\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr><tr><td>&nbsp",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "</td><td>Paciente de 32 anos g3p2 con embarazo de 7.1 semanas por fum del 20/03/2025, quien consulta por cuadro clinico de 3 horas de evolucion consistete en sangra",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "<br><p>Paciente de 32 anos g3p2 con embarazo de 7.1 semanas por fum del 20/03/2025, quien consulta por cuadro clinico de 3 horas de evolucion consistete en sangra",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "3</td></tr><tr>\n                <td width=\"30%\">Fecha de Consulta</td><td>23/05/2025</td></tr>\n            <tr><td>Semanas de Amenorrea</td><td>6.5</td><td></td><td",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "8198",
+        "text": "E, EL AISLAMIENTO DE FORMA PREVENTIVA EN TERMINOS DE CONTINGENCIA PARA&#8198; &#8198; COVID -19. SE LE PREGUNTA A LA PACIENTE SI TIENE DUDAS DURANTE LA CONSULTA, PA",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO943981"
+}

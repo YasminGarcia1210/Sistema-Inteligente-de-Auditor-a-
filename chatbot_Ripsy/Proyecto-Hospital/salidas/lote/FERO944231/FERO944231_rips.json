@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-10-28T23:03:38.779464",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-27T00:00:00",
+    "customer_name": null,
+    "total_amount": "18000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "TI",
+    "document_number": "1105379204",
+    "full_name": "ANDRES DAVID MENDOZA PEREZ",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "TI",
+      "annex_original": "TI",
+      "resolved": "TI"
+    },
+    "source_document_number": {
+      "history": "1105379204",
+      "annex_original": "1105379204",
+      "resolved": "1105379204"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "993513",
+      "consultation_date": "2025-06-26T15:07:08",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    },
+    {
+      "consultation_code": "99351004",
+      "consultation_date": "2025-06-26T15:07:08",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "18000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (18000.00) difiere de suma registros (0) por 18000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 26/06/2025 15:07:08\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 26/06/2025 14:59:35 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 26/06/2025 15:07:08\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 26/06/2025 14:59:35 Profesional: Diana Lorena Castro Cuero.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "E POR SUS PROPIOS MEDIOS, SIN COMPLICACIONES\nProcedimientos\nFecha y Hora: 26/06/2025 15:03:04 Profesional: Diana Lorena Castro Cuero.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO944231"
+}

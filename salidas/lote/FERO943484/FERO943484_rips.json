@@ -1,0 +1,66 @@
+{
+  "generated_at": "2025-10-28T23:03:05.828366",
+  "invoice": {
+    "invoice_id": "Responsable",
+    "issue_date": "2025-06-26T00:00:00",
+    "customer_name": null,
+    "total_amount": "9000.00",
+    "line_count": 0
+  },
+  "patient": {
+    "document_type": "TI",
+    "document_number": "1105376536",
+    "full_name": "JOSE MARTIN CRUZ GONZALEZ",
+    "principal_diagnosis_code": "DXR",
+    "source_document_type": {
+      "history": "TI",
+      "annex_original": "TI",
+      "resolved": "TI"
+    },
+    "source_document_number": {
+      "history": "1105376536",
+      "annex_original": "1105376536",
+      "resolved": "1105376536"
+    }
+  },
+  "rips_procedures": [],
+  "rips_consultations": [
+    {
+      "consultation_code": "993504",
+      "consultation_date": "2025-06-26T12:11:28",
+      "consultation_value": "0.00",
+      "diagnosis_code": "DXR"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "Responsable",
+    "total_value": "9000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "WARNING",
+      "code": "TOT001",
+      "message": "Total factura (9000.00) difiere de suma registros (0) por 9000.00."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "2025",
+        "text": "Prevencion\nDatos del acompañante\nTipo: Solo\nCierre Historia\nFecha y Hora: 26/06/2025 12:11:28\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 26/06/2025 12:10:36 Profes",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      },
+      {
+        "code": "2025",
+        "text": "a y Hora: 26/06/2025 12:11:28\nPROCEDIMIENTOS\nProcedimientos\nFecha y Hora: 26/06/2025 12:10:36 Profesional: Maria Ximena Franco Perez.(auxiliar .) Identificación: CC",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/lote/FERO943484"
+}

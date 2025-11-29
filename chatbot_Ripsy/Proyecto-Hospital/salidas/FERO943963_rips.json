@@ -1,0 +1,148 @@
+{
+  "generated_at": "2025-10-18T16:18:52.335866",
+  "invoice": {
+    "invoice_id": "FERO943963",
+    "issue_date": "2025-06-27T08:03:00-05:00",
+    "customer_name": "EMSSANAR EPS SAS   ",
+    "total_amount": "203500.00",
+    "line_count": 6
+  },
+  "patient": {
+    "document_type": "CC",
+    "document_number": "1002884259",
+    "full_name": "GUSTAVO ADOLFO CAICEDO DIAZ",
+    "principal_diagnosis_code": "N23X",
+    "source_document_type": {
+      "history": "CC",
+      "annex_original": "CC",
+      "resolved": "CC"
+    },
+    "source_document_number": {
+      "history": "1002884259",
+      "annex_original": "1004615201",
+      "resolved": "1002884259"
+    }
+  },
+  "rips_procedures": [
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943963",
+      "document_type": "CC",
+      "document_number": "1002884259",
+      "service_date": "2025-04-06T13:00:28",
+      "cups_code": "20046007-1",
+      "diagnosis_code": "N23X",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "15000.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943963",
+      "document_type": "CC",
+      "document_number": "1002884259",
+      "service_date": "2025-04-06T13:00:28",
+      "cups_code": "890701",
+      "diagnosis_code": "N23X",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "62700.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943963",
+      "document_type": "CC",
+      "document_number": "1002884259",
+      "service_date": "2025-04-06T13:00:28",
+      "cups_code": "865101",
+      "diagnosis_code": "N23X",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "71200.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943963",
+      "document_type": "CC",
+      "document_number": "1002884259",
+      "service_date": "2025-04-06T13:00:28",
+      "cups_code": "5DS003",
+      "diagnosis_code": "N23X",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "52200.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943963",
+      "document_type": "CC",
+      "document_number": "1002884259",
+      "service_date": "2025-04-06T13:00:28",
+      "cups_code": "001246",
+      "diagnosis_code": "N23X",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "900.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO943963",
+      "document_type": "CC",
+      "document_number": "1002884259",
+      "service_date": "2025-04-06T13:00:28",
+      "cups_code": "32375-7",
+      "diagnosis_code": "N23X",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "1500.00"
+    }
+  ],
+  "rips_consultations": [
+    {
+      "consultation_code": "890701",
+      "consultation_date": "2025-04-06T13:00:28",
+      "consultation_value": "62700.00",
+      "diagnosis_code": "N23X"
+    }
+  ],
+  "rips_medications": [
+    {
+      "medication_code": "000056720-03",
+      "medication_name": "Diclofenaco Sodico 75 mg/3 mL",
+      "total_value": "1500.00",
+      "diagnosis_code": "S212"
+    },
+    {
+      "medication_code": "J06AT018701",
+      "medication_name": "TOXOIDE TETANICO 40 UI SUSPENS",
+      "total_value": "15000.00",
+      "diagnosis_code": "S212"
+    }
+  ],
+  "rips_other_services": [
+    {
+      "service_code": "001246",
+      "service_name": "JERINGA DE 5 CON AGUJA",
+      "total_value": "900.00",
+      "diagnosis_code": "N23X"
+    },
+    {
+      "service_code": "5DS003",
+      "service_name": "DERECHOS DE SALA DE SUTURA",
+      "total_value": "52200.00",
+      "diagnosis_code": "N23X"
+    }
+  ],
+  "rips_invoice": {
+    "invoice_number": "FERO943963",
+    "total_value": "203500.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "INFO",
+      "code": "TOT002",
+      "message": "Valores en AC/AM/AT detectados adicionales a AP; se usa AP para conciliación de totales."
+    }
+  ],
+  "output_dir": "salidas/RIPS_FERO943963"
+}

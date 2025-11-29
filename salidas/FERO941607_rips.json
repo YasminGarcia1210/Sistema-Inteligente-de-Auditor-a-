@@ -1,0 +1,91 @@
+{
+  "generated_at": "2025-10-18T17:01:29.661032",
+  "invoice": {
+    "invoice_id": "FERO941607",
+    "issue_date": "2025-06-24T09:44:00-05:00",
+    "customer_name": "COMFENALCO VALLE  DE LA GENTE ",
+    "total_amount": "18000.00",
+    "line_count": 2
+  },
+  "patient": {
+    "document_type": "TI",
+    "document_number": "1110044059",
+    "full_name": "OMAR JOSE BARRIOS ZERPA",
+    "principal_diagnosis_code": "L039",
+    "source_document_type": {
+      "history": null,
+      "annex_original": "TI",
+      "resolved": "TI"
+    },
+    "source_document_number": {
+      "history": null,
+      "annex_original": "1110044059",
+      "resolved": "1110044059"
+    }
+  },
+  "rips_procedures": [
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO941607",
+      "document_type": "TI",
+      "document_number": "1110044059",
+      "service_date": "2025-04-08T10:16:22",
+      "cups_code": "993520",
+      "diagnosis_code": "L039",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "9000.00"
+    },
+    {
+      "provider_code": "805027337",
+      "invoice_number": "FERO941607",
+      "document_type": "TI",
+      "document_number": "1110044059",
+      "service_date": "2025-04-08T10:16:22",
+      "cups_code": "993510",
+      "diagnosis_code": "L039",
+      "service_purpose_code": "14",
+      "attention_type_code": "02",
+      "net_value": "9000.00"
+    }
+  ],
+  "rips_consultations": [
+    {
+      "consultation_code": "890701",
+      "consultation_date": "2025-04-08T10:16:22",
+      "consultation_value": "0.00",
+      "diagnosis_code": "L039"
+    },
+    {
+      "consultation_code": "890301",
+      "consultation_date": "2025-04-08T10:16:22",
+      "consultation_value": "0.00",
+      "diagnosis_code": "L039"
+    }
+  ],
+  "rips_medications": [],
+  "rips_other_services": [],
+  "rips_invoice": {
+    "invoice_number": "FERO941607",
+    "total_value": "18000.00"
+  },
+  "validation_messages": [
+    {
+      "severity": "INFO",
+      "code": "VAL000",
+      "message": "Registros validados sin inconsistencias detectadas."
+    }
+  ],
+  "nlp_support": {
+    "diagnoses": [],
+    "procedures": [
+      {
+        "code": "890701",
+        "text": "<td valign=\"top\" width=\"20%\">\n\t\t\t\t\t\t\tTipo:\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(890701) CONSULTA DE URGENCIAS POR MEDICINA GENERAL\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr><tr><td>&nbsp",
+        "label": "PROC_HEURISTIC",
+        "score": null
+      }
+    ]
+  },
+  "output_dir": "salidas/RIPS"
+}
