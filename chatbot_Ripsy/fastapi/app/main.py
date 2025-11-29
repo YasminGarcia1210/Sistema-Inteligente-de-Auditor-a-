@@ -1,4 +1,24 @@
+import os
+import json
+import requests
+import openai
+import psycopg2
+from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
+from fastapi import FastAPI, HTTPException, Request, File, UploadFile, Form, Query
+
+# Importar funciones de módulos locales
+from db import init_db, fetch_messages, save_message
+from storage import read_text_from_minio, upload_file_to_minio, list_files_in_folder
+from llm import generate_reply, test_openai_connection
+
+# Cargar variables de entorno
 load_dotenv()
+
+# Inicializar FastAPI
+app = FastAPI(title="Ripsy API", description="Sistema Inteligente de Auditoría en Salud")
+
+# Configurar OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://host.docker.internal:11434")
@@ -63,6 +83,12 @@ def on_startup():
 # ======================================================
 @app.get("/")
 def read_root():
+    return {"ok": True, "message": "Ripsy API está funcionando", "version": "1.0.0"}
+
+@app.post("/chat")
+def chat(payload: dict):
+    user = payload.get("user", "desconocido")
+    message = payload.get("message", "")
     if not message:
         raise HTTPException(status_code=400, detail="Falta 'message' en el payload")
 

@@ -8,7 +8,22 @@ from typing import List, Dict, Any
 # =======================
 # CONFIGURACIÓN DE OPENAI
 # =======================
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Cliente OpenAI - inicialización diferida para evitar errores al importar
+client = None
+
+def get_openai_client():
+    """Obtiene o crea el cliente de OpenAI."""
+    global client
+    if client is None:
+        api_key = os.getenv("OPENAI_API_KEY")
+        if api_key and api_key != "tu_api_key_aqui":
+            try:
+                client = OpenAI(api_key=api_key)
+            except Exception as e:
+                print(f"⚠️ Error inicializando cliente OpenAI: {e}")
+                client = None
+    return client
+
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 MAX_TOKENS = int(os.getenv("OPENAI_MAX_TOKENS", "2000"))
 TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", "0.7"))
@@ -44,7 +59,11 @@ def generate_reply(user: str, message: str, history: List[Dict[str, Any]]) -> st
         context_messages.append({"role": "user", "content": message})
         
         # Llamar a la API de OpenAI
-        response = client.chat.completions.create(
+        openai_client = get_openai_client()
+        if not openai_client:
+            return "❌ Error: Cliente de OpenAI no inicializado. Verifica la configuración de OPENAI_API_KEY."
+        
+        response = openai_client.chat.completions.create(
             model=MODEL,
             messages=context_messages,
             max_tokens=MAX_TOKENS,
@@ -73,7 +92,15 @@ def test_openai_connection() -> Dict[str, Any]:
             }
         
         # Hacer una llamada simple para probar la conexión
-        response = client.chat.completions.create(
+        openai_client = get_openai_client()
+        if not openai_client:
+            return {
+                "success": False,
+                "error": "Cliente no inicializado",
+                "message": "Verifica la configuración de OPENAI_API_KEY"
+            }
+        
+        response = openai_client.chat.completions.create(
             model=MODEL,
             messages=[{"role": "user", "content": "Hola, ¿funcionas?"}],
             max_tokens=10
