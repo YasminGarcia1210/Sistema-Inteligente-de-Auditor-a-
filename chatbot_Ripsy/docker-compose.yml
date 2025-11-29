@@ -13,6 +13,13 @@ services:
       - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    networks:
+      - ripsy_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   minio:
     image: minio/minio:latest
@@ -27,35 +34,88 @@ services:
       - "9001:9001"
     volumes:
       - miniodata:/data
+    networks:
+      - ripsy_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   fastapi:
-    image: python:3.10-slim
+    build:
+      context: .
+      dockerfile: fastapi/Dockerfile
     container_name: rips_fastapi
-    working_dir: /app
     env_file: .env
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - OPENAI_MODEL=${OPENAI_MODEL}
       - OPENAI_MAX_TOKENS=${OPENAI_MAX_TOKENS}
       - OPENAI_TEMPERATURE=${OPENAI_TEMPERATURE}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - MINIO_ENDPOINT=http://minio:9000
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
     volumes:
-      # 🩵 Montamos directamente la  carpeta fastapi/app
+      # Montar código para desarrollo con hot-reload
       - ./fastapi/app:/app
-      # 🩵 Montamos scripts y data desde el host
       - ./scripts:/app/scripts
       - ./data:/app/data
-      # 🩵 Montamos el requirements.txt desde la raíz
-      - ./requirements.txt:/app/requirements.txt
-    command: >
-      sh -c "pip install -r requirements.txt &&
-             uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+      # Montar el módulo rips_generator
+      - ../src/rips_generator:/app/rips_generator
     ports:
       - "8200:8000"
     depends_on:
-      - postgres
-      - minio
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    networks:
+      - ripsy_network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    container_name: rips_streamlit
+    env_file: .env
+    environment:
+      - FASTAPI_URL=http://fastapi:8000
+    volumes:
+      # Montar código para desarrollo
+      - ./streamlit_app.py:/app/streamlit_app.py
+      - ./.streamlit:/app/.streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      fastapi:
+        condition: service_healthy
+    networks:
+      - ripsy_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  ripsy_network:
+    driver: bridge
 
 volumes:
   pgdata:
+    name: chatbot_ripsy_pgdata
   miniodata:
+    name: chatbot_ripsy_miniodata

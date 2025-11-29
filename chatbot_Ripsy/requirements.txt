@@ -1,14 +1,40 @@
-fastapi
-uvicorn
-psycopg2-binary
-python-multipart
-boto3
-requests
-minio
-openai
-python-dotenv
-streamlit
-PyPDF2
-pytesseract
-Pillow
-pdfplumber
+# FastAPI y servidor
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Base de datos
+psycopg2-binary==2.9.9
+
+# Manejo de archivos
+python-multipart==0.0.6
+
+# Almacenamiento S3/MinIO
+boto3==1.34.34
+minio==7.2.3
+
+# HTTP requests
+requests==2.31.0
+
+# OpenAI
+openai==1.12.0
+
+# Variables de entorno
+python-dotenv==1.0.1
+
+# Streamlit
+streamlit==1.31.0
+
+# Procesamiento de PDFs
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+pytesseract==0.3.10
+Pillow==10.2.0
+
+# Machine Learning
+scikit-learn==1.4.0
+numpy==1.26.3
+pandas==2.2.0
+joblib==1.3.2
+
+# Utilidades
+python-dateutil==2.8.2
