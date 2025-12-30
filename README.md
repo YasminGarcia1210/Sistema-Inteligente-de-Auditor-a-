@@ -1,5 +1,8 @@
 # 🏥 Generador Automatizado de RIPS
 
+## Mg Yasmin Johanna Garcia 
+## Javier Ricardo Muñoz 
+
 > **Transforma facturas y registros clínicos en archivos RIPS listos para radicación.**
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)
